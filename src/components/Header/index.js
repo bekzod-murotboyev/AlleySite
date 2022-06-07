@@ -1,5 +1,4 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
-import header from '../../images/back.jpg'
 function Header() {
 
 

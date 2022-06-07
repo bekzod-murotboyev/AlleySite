@@ -4,7 +4,7 @@ import React from 'react'
 function Map() {
     return (
             <div>
-                <div className="row p-5 pb-0">
+                <div className="row p-5 pb-0 pt-0 my-0">
                     <div className="col-md-12">
                         <h3>3D Sayohat</h3>
                     </div>

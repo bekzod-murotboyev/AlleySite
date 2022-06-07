@@ -1,54 +1,32 @@
-import React from "react";
-import {
-    Box,
-    Card,
-    CardActionArea,
-    CardContent,
-    CardMedia,
-    Grid,
-    styled,
-    Typography,
-} from "@mui/material";
-import behbudiy from '../../images/writer/Behbudiy.jpeg'
-import cholpon from '../../images/writer/cho\'lpon.jpeg'
-import zulfiya from '../../images/writer/zulfiya.jpeg'
-
-import {NavLink} from "react-router-dom";
-import gulom from "../../images/writer/gulom.jpeg";
-import oripov from "../../images/writer/oripov.jpeg";
-import navoi from "../../images/writer/navoi.jpeg";
-import muhammad from "../../images/writer/muhammad.jpeg";
-import furqat from "../../images/writer/furqat.jpeg";
-import ogahiy from "../../images/writer/ogahiy.jpeg";
-import muqimiy from "../../images/writer/muqimiy.jpeg";
-import berdaq from "../../images/writer/berdaq.jpeg";
-import qodiriy from "../../images/writer/qodiriy.jpeg";
-import olimjon from "../../images/writer/olimjon.jpeg";
-import oybek from "../../images/writer/oybek.jpeg";
-import maqsud from "../../images/writer/maqsud.jpeg";
-import qahhor from "../../images/writer/qahhor.jpeg";
-import said from "../../images/writer/said.jpeg";
-import qayib from "../../images/writer/qayib.jpeg";
-import yusupov from "../../images/writer/yusupov.jpeg";
-import vohidov from "../../images/writer/vohidov.jpeg";
-import ozod from "../../images/writer/ozod.jpeg";
+import {Card, CardContent, CardMedia, Typography} from "@mui/material";
+import Toolbar from "@mui/material/Toolbar";
+import {useState, useEffect} from "react";
+import behbudiy from "../../images/writer/Behbudiy.jpeg";
+import cholpon from "../../images/writer/cho'lpon.jpeg";
+import zulfiya from "../../images/writer/zulfiya.jpeg";
 import arkad from "../../images/writer/arkad.jpeg";
+import berdaq from "../../images/writer/berdaq.jpeg";
+import furqat from "../../images/writer/furqat.jpeg";
+import gulom from "../../images/writer/gulom.jpeg";
+import maqsud from "../../images/writer/maqsud.jpeg";
+import muqimiy from "../../images/writer/muqimiy.jpeg";
+import muhammad from "../../images/writer/muhammad.jpeg";
+import navoi from "../../images/writer/navoi.jpeg";
+import ogahiy from "../../images/writer/ogahiy.jpeg";
+import olimjon from "../../images/writer/olimjon.jpeg";
+import oripov from "../../images/writer/oripov.jpeg";
+import oybek from "../../images/writer/oybek.jpeg";
+import ozod from "../../images/writer/ozod.jpeg";
+import qayib from "../../images/writer/qayib.jpeg";
+import qahhor from "../../images/writer/qahhor.jpeg";
+import qodiriy from "../../images/writer/qodiriy.jpeg";
+import said from "../../images/writer/said.jpeg";
+import vohidov from "../../images/writer/vohidov.jpeg";
+import yusupov from "../../images/writer/yusupov.jpeg";
 import yusuf from "../../images/writer/yusuf.jpeg";
 
-const Item = styled(Box)(({theme}) => ({
-    backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-}));
 
-function WriterCard({limit}) {
-
-    function changeDirection(item) {
-        localStorage.setItem('currentWriter', item.id)
-    }
-
+function Writer() {
     const books = [
         {
             id: 1,
@@ -258,45 +236,45 @@ function WriterCard({limit}) {
     ]
 
 
+    const [current, setCurrent] = useState()
+
+    useEffect(() => {
+        books.forEach(book => {
+            if (book.id == localStorage.getItem('currentWriter')) {
+                setCurrent(book)
+                return
+            }
+        })
+    }, [])
+
+
     return (
-        <Box sx={{flexGrow: 1}}>
-            <Grid container spacing={2}>
-                {
-                    books.map((i, index) => {
-                        if (limit > index)
-                            return (
-                                <Grid item xs={12} sm={6} md={3} key={index} >
-                                    <Item>
-                                        <CardActionArea className={'border rounded rounded-1'}>
-                                            <Card sx={{maxWidth: 345, maxHeight: 300, minHeight: 300}}>
+        current ? <div>
+            <Toolbar/>
+            <div className="row p-5">
+                <div className="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6">
+                    <Card>
+                        <CardMedia
+                            component="img"
+                            image={current.file_path}
+                            alt="green iguana"
+                            className='w-100 h-100'/>
+                    </Card>
+                </div>
+                <div className="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6">
+                    <CardContent className='text-center'>
+                        <Typography gutterBottom variant="h6" component="div">
+                            {current.name}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                            {current.short_info}
+                        </Typography>
+                    </CardContent>
+                </div>
+            </div>
 
-                                                <CardMedia
-                                                    component="img"
-                                                    height="140"
-                                                    image={i.file_path}
-                                                    alt="green iguana"
-                                                />
-                                                <NavLink to={'/writer'} className='text-decoration-none text-black'
-                                                         onClick={() => changeDirection(i)}>
-                                                    <CardContent className='p-1 px-4'>
-                                                        <Typography gutterBottom variant="h6" component="div">
-                                                            {i.name}
-                                                        </Typography>
-                                                        <Typography variant="body2" color="text.secondary">
-                                                            {i.short_info}
-                                                        </Typography>
-                                                    </CardContent>
-                                                </NavLink>
-                                            </Card>
-                                        </CardActionArea>
-                                    </Item>
-                                </Grid>
-                            );
-                    })}
-            </Grid>
-        </Box>
-
+        </div> : ''
     );
 }
 
-export default WriterCard
+export default Writer;

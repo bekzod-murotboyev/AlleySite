@@ -1,10 +1,10 @@
-import {createSlice} from "@reduxjs/toolkit";
+import {createAction, createSlice} from "@reduxjs/toolkit";
 import {apiCall} from "../api";
 import {toast} from 'react-toastify';
 
 const slice = createSlice({
     name: 'book',
-    initialState: {books: [], file_path: '',dropBook:false},
+    initialState: {books: [],current:{},currentWriter:{}, file_path: '',dropBook:false},
     reducers: {
         onCreateSuccess: (state, {payload}) => {
             toast.success("Success", {autoClose: 1500})
@@ -15,6 +15,15 @@ const slice = createSlice({
         },
         onGetSuccess: (state, {payload}) => {
             state.books = payload
+        },
+        onSingleGetSuccess: (state, {payload}) => {
+            state.current = payload
+        },
+        setCurrent:(state,{payload})=>{
+            state.current=payload
+        },
+        setCurrentWriter:(state,{payload})=>{
+            state.currentWriter=payload
         },
         onFail: (state, {payload: {data, status}}) => {
             if (status === 401) {
@@ -27,7 +36,7 @@ const slice = createSlice({
     }
 })
 
-
+export const {setCurrent,setCurrentWriter}=slice.actions
 
 export const create = (data) => apiCall({
     url: 'books',
@@ -47,6 +56,12 @@ export const getAll = () => apiCall({
     url: 'books',
     method: 'GET',
     onSuccess: slice.actions.onGetSuccess.type,
+    onFail: slice.actions.onFail.type,
+});
+export const get = (id) => apiCall({
+    url: 'books/'+id+'?book_id='+id,
+    method: 'GET',
+    onSuccess: slice.actions.onSingleGetSuccess.type,
     onFail: slice.actions.onFail.type,
 });
 

@@ -5,11 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf59d29-052a-4f11-ae53-5a225ce5e6a1" name="Changes" comment="tugadi">
+      <change afterPath="$PROJECT_DIR$/src/Pages/News/SingleCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/Writer/SingleWriter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/pic/img1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/pic/img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/pic/img3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/pic/img4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/writer/Behbudiy.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/writer/arkad.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/writer/avloniy.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/writer/berdaq.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/writer/cho'lpon.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/writer/furqat.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/writer/gulom.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/writer/mBehbudiy.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/writer/maqsud.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/writer/muhammad.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/writer/muqimiy.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/writer/navoi.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/writer/ogahiy.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/writer/olimjon.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/writer/oripov.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/writer/oybek.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/writer/ozod.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/writer/qahhor.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/writer/qayib.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/writer/qodiriy.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/writer/said.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/writer/vohidov.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/writer/yusuf.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/writer/yusupov.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/writer/zulfiya.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/MapPage/Map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/MapPage/Map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/News/cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/News/Cards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/News/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/News/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/PicturePage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/PicturePage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/PicturePage/pic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/PicturePage/pic.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Writer/swiper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Writer/swiper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Writer/writer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Writer/writer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admin/DashboardPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admin/DashboardPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admin/ListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admin/ListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form/FormControl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/FormControl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducer/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer/book.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +61,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -50,24 +91,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/bekzod5939/WebstormProjects/newswebsite/src/images&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/bekzod5939/WebstormProjects/newswebsite/src/images/pic",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images/pic" />
+      <recent name="$PROJECT_DIR$/src/images/writer" />
+      <recent name="$PROJECT_DIR$/src/Pages/News" />
       <recent name="$PROJECT_DIR$/src/images" />
       <recent name="$PROJECT_DIR$/src/Pages/MapPage" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/store/reducer" />
-      <recent name="$PROJECT_DIR$/src/components/form" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/page" />
@@ -118,7 +159,7 @@
       <workItem from="1654524768436" duration="2764000" />
       <workItem from="1654527610302" duration="88000" />
       <workItem from="1654600873539" duration="1190000" />
-      <workItem from="1654607942290" duration="7281000" />
+      <workItem from="1654607942290" duration="22096000" />
     </task>
     <task id="LOCAL-00001" summary="sd">
       <created>1654343486323</created>
@@ -197,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654586551107</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="tugadi">
+      <created>1654617752777</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1654617752777</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,21 +266,5 @@
     <MESSAGE value="sd" />
     <MESSAGE value="tugadi" />
     <option name="LAST_COMMIT_MESSAGE" value="tugadi" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/Pages/News/cards.js</url>
-          <line>52</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/Pages/News/cards.js</url>
-          <line>23</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

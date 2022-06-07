@@ -25,11 +25,11 @@ function MainListItems({setType, clear}) {
 
     return (
         <React.Fragment>
-            <ListItemButton>
+            <ListItemButton onClick={() => toggle('dashboard')}>
                 <ListItemIcon>
                     <DashboardIcon/>
                 </ListItemIcon>
-                <ListItemText primary="Dashboard" onClick={() => toggle('dashboard')}/>
+                <ListItemText primary="Dashboard" />
             </ListItemButton>
             <ListItemButton onClick={() => toggle('University')}>
                 <ListItemIcon>
@@ -45,15 +45,9 @@ function MainListItems({setType, clear}) {
             </ListItemButton>
             <ListItemButton onClick={() => toggle('News')}>
                 <ListItemIcon>
-                    <LayersIcon/>
-                </ListItemIcon>
-                <ListItemText primary="Add News"/>
-            </ListItemButton>
-            <ListItemButton onClick={() => toggle('Writer')}>
-                <ListItemIcon>
                     <BarChartIcon/>
                 </ListItemIcon>
-                <ListItemText primary="Add Writer"/>
+                <ListItemText primary="Add News"/>
             </ListItemButton>
             <ListItemButton onClick={logout}>
                 <ListItemIcon>

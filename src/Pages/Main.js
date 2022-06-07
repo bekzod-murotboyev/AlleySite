@@ -11,15 +11,13 @@ function Main() {
 
     return (
         <div>
-            <Header/>
             <MainPage/>
             <Video />
-            <News/>
-            <Writers/>
+            <Writers limit={4}/>
+            <News limit={4}/>
             <Books />
             <Picture/>
             <Map/>
-            <Footer/>
         </div>
     )
 }

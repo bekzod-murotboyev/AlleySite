@@ -2,7 +2,8 @@ import { Box, Typography } from "@mui/material";
 import WriterCard from "./swiper";
 import {NavLink} from "react-router-dom";
 
-function Writers() {
+function Writers({limit}) {
+
   return (
     <Box
       sx={{
@@ -12,22 +13,21 @@ function Writers() {
         borderBottom: "1px solid grey",
       }}
     >
-    <NavLink to={'/writers'}>
+    <NavLink to={'/writers'} className='text-decoration-none text-black'>
         <Typography
             sx={{
                 fontSize: "35px",
                 lineHeight: "42px",
                 mb: 5,
-                color:"black",
                 fontWeight:"500",
-                textDecoration:"none"
+
             }}
         >
-            Yozuvchilar
+            Adiblar
         </Typography>
     </NavLink>
 
-      <WriterCard />
+      <WriterCard limit={limit}/>
     </Box>
   );
 }
