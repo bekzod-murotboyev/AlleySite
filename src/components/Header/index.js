@@ -6,7 +6,7 @@ function Header() {
 
   return (
       <div>
-        <Navbar bg="light" expand="md" fixed="top">
+        <Navbar bg="light" expand="sm" fixed="top">
           <Container className="py-3  px-5" fluid>
             <Navbar.Brand href="#">
               <img

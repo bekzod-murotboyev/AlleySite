@@ -12,7 +12,7 @@ function MainPage() {
           height: "95vh",
         }}
       >
-        <Box sx={{ padding: "230px 90px" }}>
+        <Box sx={{ padding: "200px 90px" }}>
           <Typography
             sx={{
               fontSize: "50px",
