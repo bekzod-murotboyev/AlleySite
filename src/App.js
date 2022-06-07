@@ -6,6 +6,8 @@ import Writers from "./Pages/Writer/writer";
 import SingleWriter from "./Pages/Writer/SingleWriter";
 import BasicGrid from "./Pages/News/Cards";
 import SingleCard from "./Pages/News/SingleCard";
+import Footer from "./components/Footer";
+import Toolbar from "@mui/material/Toolbar";
 
 // import Books from "./Pages/Books";
 
@@ -13,8 +15,6 @@ import SingleCard from "./Pages/News/SingleCard";
 function App() {
     return (
         <div>
-            {/*<Header/>*/}
-            {/*<Toolbar/>*/}
             <Routes>
                 <Route path={"/login"} element={<SignIn/>}/>
                 <Route path={"/dashboard"} element={<Dashboard/>}/>
@@ -24,7 +24,7 @@ function App() {
                 <Route path={'/new'} element={<SingleCard/>}/>
                 <Route path={"/"} element={<Main/>}/>
             </Routes>
-            {/*<Footer/>*/}
+            <Footer/>
         </div>
     );
 }
