@@ -13,8 +13,7 @@ function App() {
             <Routes>
                 <Route path={"/login"} element={<SignIn/>}/>
                 <Route path={"/dashboard"} element={<Dashboard/>}/>
-                <Route path={"/writers"} element={<Writers />}/>
-                <Route path={"/books"} element={<Books limit={100}/>}/>
+                <Route path={"/writers"} element={<Writers limit={100}/>}/>
                 <Route path={"/"} element={<Main/>}/>
 
             </Routes>
