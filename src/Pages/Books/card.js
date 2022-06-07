@@ -151,7 +151,7 @@ function BooksSlick({books}) {
         <Slider {...settings}>
 
             {
-                books ? books.map((i, index) => {
+                 booksData.map((i, index) => {
 
                     return (
                         <div>
@@ -213,7 +213,7 @@ function BooksSlick({books}) {
 
                         </div>
                     );
-                }) : ''
+                })
             }
         </Slider>
 
