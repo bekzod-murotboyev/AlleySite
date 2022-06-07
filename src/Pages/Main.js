@@ -11,6 +11,7 @@ function Main() {
 
     return (
         <div>
+            <Header/>
             <MainPage/>
             <Video />
             <Writers limit={4}/>
@@ -18,6 +19,7 @@ function Main() {
             <Books />
             <Picture/>
             <Map/>
+            <Footer/>
         </div>
     )
 }
