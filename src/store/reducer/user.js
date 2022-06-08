@@ -1,4 +1,4 @@
-import {createSlice,createAction} from "@reduxjs/toolkit";
+import {createSlice, createAction} from "@reduxjs/toolkit";
 import {apiCall} from "../api";
 import {toast} from 'react-toastify';
 import qs from 'qs'
@@ -29,20 +29,24 @@ const slice = createSlice({
             toast.error(data.detail.error, {autoClose: 1500})
         },
         clearToken: (state, {payload}) => {
-            localStorage.setItem('access','')
-            state.token=''
+            localStorage.setItem('access', '')
+            state.token = ''
         }
     }
 })
 
-export const clear=createAction(slice.actions.clearToken.type)
+export const clear = createAction(slice.actions.clearToken.type)
 
 export const login = (data) => apiCall({
     url: 'users/login',
     method: 'POST',
     onSuccess: slice.actions.onLoginSuccess.type,
     onFail: slice.actions.onLoginFail.type,
-    data: qs.stringify(data)
+    data: qs.stringify(data),
+    header: {
+        'accept': 'application/json',
+        'Content-Type': 'application/x-www-form-urlencoded'
+    }
 });
 
 export const create = (data) => apiCall({
