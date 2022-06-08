@@ -12,11 +12,6 @@ const api = ({dispatch}) => (next) => (action) => {
     let token = localStorage.getItem('access')
     let headers = !header && token ? {'Authorization': token} : header
 
-    headers = {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers": "X-Requested-With",
-        ...headers
-    }
 
     // http://50.116.20.197:9095/
     axios({
@@ -24,11 +19,6 @@ const api = ({dispatch}) => (next) => (action) => {
         url,
         method,
         data,
-        headers,
-        proxy: {
-            host: '50.116.20.197',
-            port: 9595
-        }
     }).then(res => {
         dispatch({
             type: onSuccess,
