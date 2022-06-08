@@ -10,26 +10,32 @@ const api = ({dispatch}) => (next) => (action) => {
     next(action)
     const {url, method, onSuccess, onFail, data, header} = action.payload
     let token = localStorage.getItem('access')
-    let headers = !header ? {'Authorization': token}:header
+    let headers = !header && token ? {'Authorization': token} : header
 
-        // http://50.116.20.197:9095/
-        axios({
-            baseURL: 'http://50.116.20.197:9095/',
-            url,
-            method,
-            data,
-            headers
-        }).then(res => {
-            dispatch({
-                type: onSuccess,
-                payload: res.data
-            })
-        }).catch(err => {
-            dispatch({
-                type: onFail,
-                payload: err.response
-            })
+    headers = {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "X-Requested-With",
+        ...headers
+    }
+
+    // http://50.116.20.197:9095/
+    axios({
+        baseURL: 'http://50.116.20.197:9095/',
+        url,
+        method,
+        data,
+        headers
+    }).then(res => {
+        dispatch({
+            type: onSuccess,
+            payload: res.data
         })
+    }).catch(err => {
+        dispatch({
+            type: onFail,
+            payload: err.response
+        })
+    })
 }
 
 export default api;
