@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf59d29-052a-4f11-ae53-5a225ce5e6a1" name="Changes" comment="tugadi">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +121,7 @@
       <workItem from="1654607942290" duration="22417000" />
       <workItem from="1654634879277" duration="1675000" />
       <workItem from="1654640122496" duration="2628000" />
-      <workItem from="1654654029219" duration="4866000" />
+      <workItem from="1654654029219" duration="5232000" />
     </task>
     <task id="LOCAL-00001" summary="sd">
       <created>1654343486323</created>
@@ -262,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654664345138</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="tugadi">
+      <created>1654665140353</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1654665140353</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

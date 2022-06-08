@@ -20,11 +20,15 @@ const api = ({dispatch}) => (next) => (action) => {
 
     // http://50.116.20.197:9095/
     axios({
-        baseURL: 'http://localhost:9095/',
+        baseURL: 'http://50.116.20.197:9095/',
         url,
         method,
         data,
-        headers
+        headers,
+        proxy: {
+            host: '50.116.20.197',
+            port: 9595
+        }
     }).then(res => {
         dispatch({
             type: onSuccess,
