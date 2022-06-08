@@ -14,6 +14,7 @@ import {connect} from "react-redux";
 import {getAll, setCurrent} from "../../store/reducer/book";
 import Toolbar from "@mui/material/Toolbar";
 import {NavLink} from "react-router-dom";
+import Header from "../../components/Header";
 
 const Item = styled(Box)(({theme}) => ({
     backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -35,10 +36,9 @@ function BasicGrid({books, getAll, setCurrent, limit}) {
     useEffect(() => {
         getAll()
     }, [])
-
-
     return (
         <Box sx={{flexGrow: 1}} className='mb-5'>
+            <Header/>
             <Toolbar/>
             <Grid container spacing={2}>
                 {

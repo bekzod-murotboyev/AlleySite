@@ -3,6 +3,7 @@ import Toolbar from "@mui/material/Toolbar";
 import {useState, useEffect} from "react";
 import {connect} from "react-redux";
 import {get} from "../../store/reducer/book";
+import Header from "../../components/Header";
 
 
 function SingleCard({current, get}) {
@@ -16,6 +17,7 @@ function SingleCard({current, get}) {
 
     return (
         current ? <div>
+            <Header/>
             <Toolbar/>
             <div className="row p-5">
                 <div className="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6">

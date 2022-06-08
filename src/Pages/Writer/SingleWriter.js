@@ -24,6 +24,8 @@ import said from "../../images/writer/said.jpeg";
 import vohidov from "../../images/writer/vohidov.jpeg";
 import yusupov from "../../images/writer/yusupov.jpeg";
 import yusuf from "../../images/writer/yusuf.jpeg";
+import Header from "../../components/Header";
+import SwiperNews from "./SwiperNews";
 
 
 function Writer() {
@@ -250,6 +252,7 @@ function Writer() {
 
     return (
         current ? <div>
+            <Header/>
             <Toolbar/>
             <div className="row p-5">
                 <div className="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6">
@@ -272,7 +275,7 @@ function Writer() {
                     </CardContent>
                 </div>
             </div>
-
+            <SwiperNews writer={current}/>
         </div> : ''
     );
 }
