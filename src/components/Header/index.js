@@ -7,7 +7,7 @@ function Header() {
 
   return (
       <div>
-        <Navbar bg="black" expand="lg" fixed="top">
+        <Navbar bg="white" expand="lg" fixed="top">
           <Container className="py-3  px-5" fluid>
             <Navbar.Brand href="#">
               <img
@@ -24,17 +24,17 @@ function Header() {
                   navbarScroll
               ></Nav>
               <Nav className="d-flex " style={{ fontSize: "20px" }}>
-                <Nav.Link href="#main"  className="py-1 px-3 text-white">
+                <Nav.Link href="#main"  className="py-1 px-3">
                   Asosiy
                 </Nav.Link>
 
-                <Nav.Link href="#news" className="py-1 px-3 text-white">
+                <Nav.Link href="#news" className="py-1 px-3">
                   Yangiliklar
                 </Nav.Link>
-                <Nav.Link href="#books" className="py-1 px-3 text-white">
+                <Nav.Link href="#books" className="py-1 px-3">
                   Kitoblar
                 </Nav.Link>
-                <Nav.Link href="#picture" className="py-1 px-3 text-white">
+                <Nav.Link href="#picture" className="py-1 px-3">
                   Rasmlar
                 </Nav.Link>
               </Nav>
