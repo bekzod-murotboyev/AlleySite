@@ -1,19 +1,39 @@
-import {Card, CardContent, CardMedia, Typography} from "@mui/material";
-import Toolbar from "@mui/material/Toolbar";
-import {useState, useEffect} from "react";
-import Header from "../../components/Header";
-import news1 from "../../images/news/news1.jpeg";
-import news2 from "../../images/news/news2.jpeg";
-import news3 from "../../images/news/news3.jpeg";
-import news4 from "../../images/news/news4.jpeg";
-import news5 from "../../images/news/news5.jpeg";
-import news6 from "../../images/news/news6.jpeg";
-import news7 from "../../images/news/news7.jpeg";
-import news8 from "../../images/news/news8.jpeg";
-import news9 from "../../images/news/news9.jpeg";
+import React from "react";
+import {
+    Box,
+    Card,
+    CardActionArea,
+    CardContent,
+    CardMedia,
+    Grid,
+    styled,
+    Typography,
+} from "@mui/material";
+import news1 from '../../../images/news/news1.jpeg'
+import news2 from '../../../images/news/news2.jpeg'
+import news3 from '../../../images/news/news3.jpeg'
+import news4 from '../../../images/news/news4.jpeg'
+import news5 from '../../../images/news/news5.jpeg'
+import news6 from '../../../images/news/news6.jpeg'
+import news7 from '../../../images/news/news7.jpeg'
+import news8 from '../../../images/news/news8.jpeg'
+import news9 from '../../../images/news/news9.jpeg'
+import {NavLink} from "react-router-dom";
 
+const Item = styled(Box)(({theme}) => ({
+    backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+    ...theme.typography.body2,
+    padding: theme.spacing(1),
+    textAlign: "center",
+    color: theme.palette.text.secondary,
+}));
 
-function Writer() {
+function WriterCard({writer}) {
+
+    function changeDirection(item) {
+        localStorage.setItem('currentNews', item.id)
+    }
+
     const books = [
         {
             id:1,
@@ -161,42 +181,41 @@ function Writer() {
     ]
 
 
-    const [current, setCurrent] = useState()
-
-    useEffect(() => {
-        books.forEach(book => {
-            if (book.id == localStorage.getItem('currentNews')) {
-                setCurrent(book)
-                return
-            }
-        })
-    }, [])
-
-
     return (
-        current ? <div>
-            <Header/>
-            <Toolbar/>
-            <div className="row p-5">
-                <div className="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6">
-                    <Card>
-                        <CardMedia
-                            component="img"
-                            image={current.file_path}
-                            alt="green iguana"
-                            className='w-100 h-100'/>
-                    </Card>
-                </div>
-                <div className="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6">
-                    <CardContent className='text-center'>
-                        <Typography variant="body2" color="text.secondary">
-                            {current.info}
-                        </Typography>
-                    </CardContent>
-                </div>
-            </div>
-        </div> : ''
+        writer.id===1?<Box sx={{flexGrow: 1}}>
+            <Grid container spacing={2}>
+                {
+                    books.map((i, index) => {
+                            return (
+                                <Grid item xs={12} sm={6} md={3} key={index} >
+                                    <Item>
+                                        <CardActionArea className={'border rounded rounded-1'}>
+                                            <Card sx={{maxWidth: 345, maxHeight: 300, minHeight: 300}}>
+
+                                                <CardMedia
+                                                    component="img"
+                                                    height="140"
+                                                    image={i.file_path}
+                                                    alt="green iguana"
+                                                />
+                                                <NavLink to={'/published_news'} className='text-decoration-none text-black'
+                                                         onClick={() => changeDirection(i)}>
+                                                    <CardContent className='p-1 px-4'>
+                                                        <Typography variant="body2" color="text.secondary">
+                                                            {i.info}
+                                                        </Typography>
+                                                    </CardContent>
+                                                </NavLink>
+                                            </Card>
+                                        </CardActionArea>
+                                    </Item>
+                                </Grid>
+                            );
+                    })}
+            </Grid>
+        </Box>:''
+
     );
 }
 
-export default Writer;
+export default WriterCard

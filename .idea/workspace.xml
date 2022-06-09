@@ -5,27 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cf59d29-052a-4f11-ae53-5a225ce5e6a1" name="Changes" comment="tugadi">
-      <change afterPath="$PROJECT_DIR$/src/images/books/beparvolik.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Books/card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Books/card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/MainPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/MainPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Writer/SingleNews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Writer/SingleNews.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Writer/writer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Writer/writer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/admin/ListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admin/ListItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form/FormBook.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/FormWriter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/form/FormControl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/FormControl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/back.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/books/back.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/emro.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/books/emro.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/hajjpg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/books/hajjpg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/ilm.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/books/ilm.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/maneken.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/books/maneken.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/olov.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/books/olov.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/saodat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/books/saodat.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/tafsir.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/books/tafsir.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/tarix.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/books/tarix.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Writer/SingleNews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Writer/writerNews/SingleNews.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Writer/SingleWriter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Writer/SingleWriter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Writer/SwiperNews.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Writer/writerNews/SwiperNews.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,11 +72,11 @@
       <recent name="$PROJECT_DIR$/src/images/pic" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Pages/Writer/writerNews" />
+      <recent name="$PROJECT_DIR$/src/Pages/Writer" />
+      <recent name="$PROJECT_DIR$/src/Pages/News" />
       <recent name="$PROJECT_DIR$/src/images/books" />
       <recent name="$PROJECT_DIR$/src/page" />
-      <recent name="$PROJECT_DIR$/src/component/page" />
-      <recent name="$PROJECT_DIR$/src/component/admin" />
-      <recent name="$PROJECT_DIR$/src/util/font-family" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -142,7 +125,7 @@
       <workItem from="1654640122496" duration="2628000" />
       <workItem from="1654654029219" duration="5656000" />
       <workItem from="1654666341650" duration="357000" />
-      <workItem from="1654754224153" duration="1997000" />
+      <workItem from="1654754224153" duration="2312000" />
     </task>
     <task id="LOCAL-00001" summary="sd">
       <created>1654343486323</created>
@@ -305,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654665572253</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="tugadi">
+      <created>1654756395776</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1654756395777</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

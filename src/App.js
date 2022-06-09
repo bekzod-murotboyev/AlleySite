@@ -7,7 +7,7 @@ import SingleWriter from "./Pages/Writer/SingleWriter";
 import BasicGrid from "./Pages/News/Cards";
 import SingleCard from "./Pages/News/SingleCard";
 import Footer from "./components/Footer";
-import SingleNews from "./Pages/Writer/SingleNews";
+import SingleNews from "./Pages/Writer/writerNews/SingleNews";
 
 // import Books from "./Pages/Books";
 

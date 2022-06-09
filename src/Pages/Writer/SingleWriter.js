@@ -25,7 +25,7 @@ import vohidov from "../../images/writer/vohidov.jpeg";
 import yusupov from "../../images/writer/yusupov.jpeg";
 import yusuf from "../../images/writer/yusuf.jpeg";
 import Header from "../../components/Header";
-import SwiperNews from "./SwiperNews";
+import SwiperNews from "./writerNews/SwiperNews";
 
 
 function Writer() {
