@@ -15,8 +15,7 @@ function Footer() {
         justifyContent: "space-between",
         alignItems: "center",
         background: "#000000",
-        py: 7,
-        px: 13,
+        p: 7,
       }}
     >
       <Box>
