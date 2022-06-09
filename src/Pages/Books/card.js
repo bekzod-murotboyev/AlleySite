@@ -54,8 +54,6 @@ function BooksSlick() {
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3,
-                    infinite: true,
-
                 }
             },
             {
@@ -150,12 +148,14 @@ function BooksSlick() {
                 booksData.map((i, index) => {
 
                     return (
-                        <div>
+                        <div key={index}>
                             <Card
                                 sx={{
                                     maxWidth: 345,
+                                    minHeight:480,
+                                    maxHeight:480,
                                     transition: "0.2s",
-                                    px: 2,
+                                    px: 1,
                                     py: 1,
                                     background: "#EDEDED",
                                     mx: 1,
@@ -167,9 +167,8 @@ function BooksSlick() {
                                 <CardMedia
                                     component="img"
                                     image={i.imgUrl}
-
                                     alt="wrong"
-                                    sx={{px: 2, py: 1, height: "300px"}}
+                                    sx={{p :1, height: "300px"}}
 
 
                                 />

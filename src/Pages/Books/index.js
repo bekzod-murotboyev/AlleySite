@@ -6,7 +6,7 @@ function Books({limit}) {
     <Box
       sx={{
         py: 4,
-        px: 13,
+        px: 7,
         mt: 8,
 
       }}
