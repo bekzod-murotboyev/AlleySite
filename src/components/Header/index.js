@@ -7,34 +7,35 @@ function Header() {
 
   return (
       <div>
-        <Navbar bg="white" expand="lg" fixed="top">
+        <Navbar expand="lg" fixed="top" className='text-white bg-dark'>
           <Container className="py-3  px-5" fluid>
-            <Navbar.Brand href="#">
+            <Navbar.Brand href="#" className='w-50'>
               <img
                   src={logo}
                   alt=""
-                  className="w-50"
+                  className="w-100"
               />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
               <Nav
-                  className="me-auto my-2 my-lg-0"
+                  activeClassName="navbar-brand-active"
+                  className="me-auto my-lg-0"
                   style={{ maxHeight: "100px" }}
                   navbarScroll
               ></Nav>
               <Nav className="d-flex " style={{ fontSize: "20px" }}>
-                <Nav.Link href="#main"  className="py-1 px-3">
+                <Nav.Link href="#main"  className="py-1 px-3 text-white">
                   Asosiy
                 </Nav.Link>
 
-                <Nav.Link href="#news" className="py-1 px-3">
+                <Nav.Link href="#news" className="py-1 px-3 text-white">
                   Yangiliklar
                 </Nav.Link>
-                <Nav.Link href="#books" className="py-1 px-3">
+                <Nav.Link href="#books" className="py-1 px-3 text-white">
                   Kitoblar
                 </Nav.Link>
-                <Nav.Link href="#picture" className="py-1 px-3">
+                <Nav.Link href="#picture" className="py-1 px-3 text-white">
                   Rasmlar
                 </Nav.Link>
               </Nav>
