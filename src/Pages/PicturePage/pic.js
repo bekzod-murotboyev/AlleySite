@@ -39,17 +39,19 @@ const itemData = [
 
 export default function BasicGrid() {
     return (
-        <ImageList sx={{width: 1200, height: 500}} cols={4} rowHeight={400} className='mb-0'>
-            {itemData.map((item) => (
-                <ImageListItem key={item.img} className='mx-2'>
-                    <img
-                        src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                        srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                        alt={item.title}
-                        loading="lazy"
-                    />
-                </ImageListItem>
-            ))}
-        </ImageList>
+        <Box>
+            <ImageList sx={{width: 1200, height: 500}} cols={4} rowHeight={400} className='mb-0'>
+                {itemData.map((item) => (
+                    <ImageListItem key={item.img} className='mx-2'>
+                        <img
+                            src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                            srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                            alt={item.title}
+                            loading="lazy"
+                        />
+                    </ImageListItem>
+                ))}
+            </ImageList>
+        </Box>
     );
 }

@@ -5,7 +5,6 @@ import {
     CardActions,
     CardContent,
     CardMedia,
-    Grid,
     styled,
     Typography,
 } from "@mui/material";
@@ -13,20 +12,19 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import Slider from "react-slick";
 import {useState} from "react";
 import ModalForm from "../../components/modal/ModalForm";
-// export default connect(({book: {books}}) => ({books}), {getAll})(Cards)
-import maneken from "../../../src/images/maneken.jpg"
-import olov from '../../../src/images/olov.jpg'
-import tafsir from '../../images/tafsir.jpg'
-import saodat from '../../images/saodat.jpg'
-import emro from "../../images/emro.jpg"
-import ilm from '../../images/ilm.jpg'
-import haj from '../../images/hajjpg.jpg'
-import tarix from "../../images/tarix.jpg"
-import {connect} from "react-redux";
+import beparvo from "../../images/books/beparvolik.jpeg"
+import maneken from "../../images/books/maneken.jpg"
+import olov from '../../images/books/olov.jpg'
+import tafsir from '../../images/books/tafsir.jpg'
+import saodat from '../../images/books/saodat.jpg'
+import emro from "../../images/books/emro.jpg"
+import ilm from '../../images/books/ilm.jpg'
+import haj from '../../images/books/hajjpg.jpg'
+import tarix from "../../images/books/tarix.jpg"
 import {useEffect} from "react";
 import {getAll} from "../../store/reducer/book";
 
-const Item = styled(Box)(({theme}) => ({
+const item = styled(Box)(({theme}) => ({
     backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
     ...theme.typography.body2,
     padding: theme.spacing(2),
@@ -34,7 +32,7 @@ const Item = styled(Box)(({theme}) => ({
     color: theme.palette.text.secondary,
 }));
 
-function BooksSlick({books}) {
+function BooksSlick() {
 
     const [open, setOpen] = useState(false)
     const [book, setBook] = useState({})
@@ -43,8 +41,6 @@ function BooksSlick({books}) {
         getAll()
     }, [])
 
-    const basePath = 'http://50.116.20.197:9095/file/1?filename='
-    // const basePath='https://adiblarxiyoboni.netlify.app/assets/images/'
     const settings = {
         infinite: true,
         speed: 1000,
@@ -88,8 +84,8 @@ function BooksSlick({books}) {
 
     const booksData = [
         {
-            imgUrl: "https://adiblarxiyoboni.netlify.app/assets/images/book1.png",
-            name: "Beparvolikning nozik san'a",
+            imgUrl: `${beparvo}`,
+            name: "Beparvolikning nozik san'at",
             author: "Mark Menson",
             short_info: "37 000 UZS",
         },
@@ -107,7 +103,7 @@ function BooksSlick({books}) {
         },
         {
             imgUrl: `${saodat}`,
-            name: "Kimyoiy saodat",
+            name: "Kimyoviy saodat",
             author: "Abu Homid G'azolliy",
             short_info: "85 000 UZS",
         },
@@ -151,7 +147,7 @@ function BooksSlick({books}) {
         <Slider {...settings}>
 
             {
-                 booksData.map((i, index) => {
+                booksData.map((i, index) => {
 
                     return (
                         <div>
@@ -222,7 +218,7 @@ function BooksSlick({books}) {
 
 }
 
-export default connect(({book: {books}}) => ({books}))(BooksSlick)
+export default BooksSlick
 
 
 

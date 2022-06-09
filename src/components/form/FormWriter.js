@@ -6,7 +6,7 @@ import {create, upload} from "../../store/reducer/book";
 import {toast} from "react-toastify";
 import {useState, useEffect} from "react";
 
-function FormBook({create, file_path, upload}) {
+function FormWriter({create, file_path, upload}) {
 
     const [oldData, setOldData] = useState({})
 
@@ -95,4 +95,4 @@ function FormBook({create, file_path, upload}) {
 }
 
 
-export default connect(({book: {file_path}}) => ({file_path}), {create, upload})(FormBook)
+export default connect(({book: {file_path}}) => ({file_path}), {create, upload})(FormWriter)

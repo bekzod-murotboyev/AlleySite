@@ -18,7 +18,6 @@ function Main() {
             <Books />
             <Picture/>
             <Map/>
-            {/*<Footer/>*/}
         </div>
     )
 }

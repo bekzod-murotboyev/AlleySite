@@ -7,7 +7,6 @@ import SingleWriter from "./Pages/Writer/SingleWriter";
 import BasicGrid from "./Pages/News/Cards";
 import SingleCard from "./Pages/News/SingleCard";
 import Footer from "./components/Footer";
-import Toolbar from "@mui/material/Toolbar";
 import SingleNews from "./Pages/Writer/SingleNews";
 
 // import Books from "./Pages/Books";
