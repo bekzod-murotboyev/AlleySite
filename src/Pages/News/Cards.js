@@ -37,9 +37,7 @@ function BasicGrid({books, getAll, setCurrent, limit}) {
         getAll()
     }, [])
     return (
-        <Box sx={{flexGrow: 1}} className='mb-5'>
-            <Header/>
-            <Toolbar/>
+        <Box sx={{flexGrow: 1}}>
             <Grid container spacing={2}>
                 {
                     books.map((i, index) => {

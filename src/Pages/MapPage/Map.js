@@ -1,13 +1,22 @@
 import React from 'react'
+import {Typography} from "@mui/material";
 
 
 function Map() {
     return (
             <div>
                 <div className="row p-5 pb-0 pt-0 mt-1 mx-5 mt-5">
-                    <div className="col-md-12">
-                        <h3>3D Sayohat</h3>
-                    </div>
+                    <Typography
+                        sx={{
+                            fontSize: "35px",
+                            fontWeight: "400",
+                            lineHeight: "42px",
+                            my: 4,
+                            mt: 8,
+                        }}
+                    >
+                        3D Sayohat
+                    </Typography>
                 </div>
                 <div className="row px-sm-4 px-md-4 px-4 px-lg-4 mb-1">
                         <iframe

@@ -30,7 +30,7 @@ function Header() {
                 </Nav.Link>
 
                 <Nav.Link href="#news" className="py-1 px-3 text-white">
-                  Yangiliklar
+                  Maqolalar
                 </Nav.Link>
                 <Nav.Link href="#books" className="py-1 px-3 text-white">
                   Kitoblar

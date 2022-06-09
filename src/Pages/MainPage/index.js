@@ -12,7 +12,7 @@ function MainPage() {
           height: "95vh",
         }}
       >
-        <Box sx={{ padding: "200px 90px" }}>
+        <Box sx={{ padding: "150px 90px" }}>
           <Typography
             sx={{
               fontSize: "50px",
@@ -30,7 +30,7 @@ function MainPage() {
               marginBottom: "16px",
             }}
           >
-            elning maʼnaviyatini ko‘rsatadi.
+            elning maʼnaviyatini ko‘rsatadi
           </Typography>
           <Typography sx={{ fontSize: "25px", color: "white" }}>
             Shavkat Mirziyoyev

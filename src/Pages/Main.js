@@ -6,6 +6,7 @@ import Books from "./Books";
 import Picture from "./PicturePage";
 import Video from "../Pages/VideoPage/video"
 import Map from "./MapPage/Map";
+import Title from "./News/title";
 function Main() {
 
     return (
@@ -14,6 +15,7 @@ function Main() {
             <MainPage/>
             <Video />
             <Writers limit={4}/>
+            <Title/>
             <News limit={4}/>
             <Books />
             <Picture/>

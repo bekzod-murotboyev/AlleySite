@@ -34,6 +34,8 @@ import vohidov from "../../images/writer/vohidov.jpeg";
 import ozod from "../../images/writer/ozod.jpeg";
 import arkad from "../../images/writer/arkad.jpeg";
 import yusuf from "../../images/writer/yusuf.jpeg";
+import Header from "../../components/Header";
+import Toolbar from "@mui/material/Toolbar";
 
 const Item = styled(Box)(({theme}) => ({
     backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -260,6 +262,7 @@ function WriterCard({limit}) {
 
     return (
         <Box sx={{flexGrow: 1}}>
+            <Header/>
             <Grid container spacing={2}>
                 {
                     books.map((i, index) => {

@@ -1,6 +1,7 @@
 import {Box, Typography} from "@mui/material";
 import WriterCard from "./swiper";
 import {NavLink} from "react-router-dom";
+import Toolbar from "@mui/material/Toolbar";
 
 function Writers({limit}) {
 
@@ -13,6 +14,7 @@ function Writers({limit}) {
                 borderBottom: "1px solid grey",
             }}
         >
+            <Toolbar/>
             <NavLink to={'/writers'} className='text-decoration-none text-black'>
                 <Typography
                     sx={{

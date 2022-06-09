@@ -19,6 +19,7 @@ function SingleCard({current, get}) {
         current ? <div>
             <Header/>
             <Toolbar/>
+            <Toolbar/>
             <div className="row p-5">
                 <div className="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6">
                     <Card>

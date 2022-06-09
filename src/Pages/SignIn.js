@@ -54,6 +54,7 @@ function SignInPage({login, token}) {
         <div>
             <Header/>
             <Toolbar/>
+            <Toolbar/>
             <ThemeProvider theme={theme}>
                 <Container component="main" maxWidth="xs">
                     <CssBaseline/>
