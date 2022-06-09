@@ -36,9 +36,9 @@ function WriterCard({writer}) {
 
     const books = [
         {
-            id:1,
-            file_path:news1,
-            info:'Til bilgan – el biladi\n' +
+            id: 1,
+            file_path: news1,
+            info: 'Til bilgan – el biladi\n' +
                 'Til bilgan – el biladi\n' +
                 'xasan\n' +
                 ' Yangiliklar\n' +
@@ -52,9 +52,9 @@ function WriterCard({writer}) {
                 'Matbuot xizmati'
         },
         {
-            id:2,
-            file_path:news2,
-            info:'Маърифатпарвар адибимизни ёд этиб...\n' +
+            id: 2,
+            file_path: news2,
+            info: 'Маърифатпарвар адибимизни ёд этиб...\n' +
                 'xasan\n' +
                 ' Dolzarb masalalar\n' +
                 ' 28 August 2020\n' +
@@ -70,9 +70,9 @@ function WriterCard({writer}) {
                 '\n'
         },
         {
-            id:3,
-            file_path:news3,
-            info:'Spektaklning ikkinchi sahnasi ifoda vositalari yordamida o‘ta fojiali tarzda tasvirlangan. Bu sahnada boyning o‘g‘li Toshmurod otasining bergan pullari har qancha ko‘p bo‘lsa ham uning kayfu safosiga yetmagani sababli jinoyatchiga aylanishi hikoya qilinadi. Qahvaxonada ichkilik ichib, mast-alas, takasaltang o‘smirlar Toshmurodga o‘z otasining pulini o‘g‘irlashni maslahat beradilar.\n' +
+            id: 3,
+            file_path: news3,
+            info: 'Spektaklning ikkinchi sahnasi ifoda vositalari yordamida o‘ta fojiali tarzda tasvirlangan. Bu sahnada boyning o‘g‘li Toshmurod otasining bergan pullari har qancha ko‘p bo‘lsa ham uning kayfu safosiga yetmagani sababli jinoyatchiga aylanishi hikoya qilinadi. Qahvaxonada ichkilik ichib, mast-alas, takasaltang o‘smirlar Toshmurodga o‘z otasining pulini o‘g‘irlashni maslahat beradilar.\n' +
                 '\n' +
                 'Qahvaxona ko‘rinishidan so‘ng voqealar boyning hovlisiga ko‘chadi. Boy supada xurrak otib uxlab yotibdi. Bu holatni Abdulla Avloniy juda ishonarli ijro etadi. Toshmurod — Badriddin A’lamov uyga pusib kirib, Tangriqulga uy eshigini ochib beradi. Tangriqul rolini Shoh Inoyatov ijro etgan. U qo‘lida kalit, har ehtimolga qarshi temir asbob va pichoq bilan qurollangan. U asta yurib borib, sandiqni buza boshlaydi. Shu payt boy uyqudan uyg‘onib, dod sola boshlaydi. Qo‘liga tayoqni olib Tangriqulga tashlanadi. Voqeaning bunday tus olishini kutmagan Toshmurod bilan Tangriqul olishish jarayonida uni pichoqlab qo‘yadi. Ular pulni oladilar va Toshmurod otasini shu ahvolida tashlab, qahvaxonaga shoshiladi.\n' +
                 '\n' +
@@ -84,9 +84,9 @@ function WriterCard({writer}) {
                 '\nO‘sha davr matbuotiga asoslangan holda to‘la ishonch bilan aytamizki, spektakl juda katta muvaffaqiyat qozondi. “Oyina” jurnalining 1914 yil 22 mart sonida Fuzoil Joniboyevning “Toshkentda milliy teatr” nomli maqolasi e’lon qilinadi. Unda aktyorlar o‘z rollarini muvaffaqiyatli ijro etganlari, ayniqsa, A.Avloniy ijrosidagi boy obrazi to‘laqonli gavdalantirilgani ta’kidlab o‘tiladi. Shuningdek, “Turkiston viloyati gazetasi” ham spektaklga munosib baho beradi.\n'
         },
         {
-            id:4,
-            file_path:news4,
-            info:'1915-yilda Behbudiy “sart” masalasiga qaytib, “Oyna” jurnalining bir necha sonlarida “Sart so‘zi majhuldir” degan nom ostida turkum maqolalar chop etadi. Mazkur maqolalarda mutafakkirning tarix va tilshunoslikni chuqur bilishi yaqqol namoyon bo‘ladi. Yakunda mutafakkir 13 banddan iborat ilmiy asoslarni bayon qiladi va ularga “Sho‘ro” jurnalida bosilgan Baqoxo‘ja Samarqandiyning 9 ilmiy asosini qo‘shadi. “Sart so‘zi majhuldir” maqolasini o‘qigan kishi Mahmudxo‘ja Behbudiyning bir necha tilda yozilgan manbalardan mohirlik bilan foydalanganiga guvoh bo‘ladi. Maqolada bir necha asrlik tarix tilga kiradi.\n' +
+            id: 4,
+            file_path: news4,
+            info: '1915-yilda Behbudiy “sart” masalasiga qaytib, “Oyna” jurnalining bir necha sonlarida “Sart so‘zi majhuldir” degan nom ostida turkum maqolalar chop etadi. Mazkur maqolalarda mutafakkirning tarix va tilshunoslikni chuqur bilishi yaqqol namoyon bo‘ladi. Yakunda mutafakkir 13 banddan iborat ilmiy asoslarni bayon qiladi va ularga “Sho‘ro” jurnalida bosilgan Baqoxo‘ja Samarqandiyning 9 ilmiy asosini qo‘shadi. “Sart so‘zi majhuldir” maqolasini o‘qigan kishi Mahmudxo‘ja Behbudiyning bir necha tilda yozilgan manbalardan mohirlik bilan foydalanganiga guvoh bo‘ladi. Maqolada bir necha asrlik tarix tilga kiradi.\n' +
                 '\n' +
                 'Mazkur maqolalar orasida ona tili muammolariga bag‘ishlangan va  chuqur tahliliy xulosalari bilan yaqqol ajralib turadigani, shubhasiz, “Til masalasi” maqolasi hisoblanadi.\n' +
                 '\n' +
@@ -103,9 +103,9 @@ function WriterCard({writer}) {
                 ' o‘rganish ICESCO” kafedrasi katta o‘qituvchisi.'
         },
         {
-            id:5,
-            file_path:news5,
-            info:'BARHAYOT GʻOYALAR\n' +
+            id: 5,
+            file_path: news5,
+            info: 'BARHAYOT GʻOYALAR\n' +
                 'BARHAYOT GʻOYALAR\n' +
                 'Super User\n' +
                 ' Hot trend\n' +
@@ -123,9 +123,9 @@ function WriterCard({writer}) {
                 '— Беҳбудий адабиёт, тарих фанлари билан бирга сиёсатни ҳам ўрганади, — дейди  “Мумтоз Шарқ филологияси” факультети декани И.Мирзиётов. — Газета ва журналлар орқали дунёда содир бўлаётган янгиликлар билан танишиб борган. Макка, Миср ҳамда кўплаб давлатларга қилган саёҳатлари унинг дунёқарашини бутунлай ўзгартириб юборган. У мактаб ва санъатни яхшилаш масалаларига бағишланган қатор мақолалари газета ва журналларда доимий равишда чоп этилган.\n'
         },
         {
-            id:6,
-            file_path:news6,
-            info:'Беҳбудий ҳаёти ва ижоди, илмий-маънавий бой меросини ўрганиш олимлар, адабиётшунослар ўртасида бошланиб кетди. Жумладан, Ўзбекистонда Б.Қосимов, Ҳ.Сайид, Н.Авазов, З.Аҳророва, Тожикистонда Р.Ходизода, Германияда И.Балдауф (Ўзбекистонлик Б.Қосимов билан ҳамкорликда), АҚШда Э.Олворт, Эронда Ҳусейнпур Акрам каби қатор мамлакатларнинг олимлари Беҳбудий ҳаёти ва ижоди бўйича илмий-тадқиқот ишларини олиб боришди. Пойтахтимиздаги кўплаб шаҳар ва кўчалар, мактабларга Маҳмудхўжа Беҳбудий номи қўйилди.\n' +
+            id: 6,
+            file_path: news6,
+            info: 'Беҳбудий ҳаёти ва ижоди, илмий-маънавий бой меросини ўрганиш олимлар, адабиётшунослар ўртасида бошланиб кетди. Жумладан, Ўзбекистонда Б.Қосимов, Ҳ.Сайид, Н.Авазов, З.Аҳророва, Тожикистонда Р.Ходизода, Германияда И.Балдауф (Ўзбекистонлик Б.Қосимов билан ҳамкорликда), АҚШда Э.Олворт, Эронда Ҳусейнпур Акрам каби қатор мамлакатларнинг олимлари Беҳбудий ҳаёти ва ижоди бўйича илмий-тадқиқот ишларини олиб боришди. Пойтахтимиздаги кўплаб шаҳар ва кўчалар, мактабларга Маҳмудхўжа Беҳбудий номи қўйилди.\n' +
                 '\n' +
                 'Бугун Беҳбудий сингари маърифатпарвар жадид боболаримиз муқаддас тутган юрт озод ва мустақил бўлди. Улар томонидан аждодларимиз амал қилиб келган асрий анъаналар, урф-одатлар, миллий маданий ва маънавий ўзлик бизгача безавол етиб келди. Албатта, биз жадид боболаримизга муносиб ворислар бўлиб, улар тутган эзгулик ва ўз миллий юксалиш йўлимиздан адашмай боришимиз зарур.\n' +
                 '\n' +
@@ -140,9 +140,9 @@ function WriterCard({writer}) {
                 'филология фанлари номзоди'
         },
         {
-            id:7,
-            file_path:news7,
-            info:'Jumladan, “Muhtaram yoshlarg‘a murojaat” nomli maqolasida muallif shunday xitob qiladi: “Muhtaram birodarlar! Barchamizga oftob kabi ravshan va ayondurki, makotib — taraqqiyning boshlang‘ichi, madaniyat va saodatning darvozasidur. Har millat eng avval, makotibi ibtidoiysini zamoncha isloh etib ko‘payturmaguncha taraqqiy yo‘lig‘a kirub madaniyatdan foydalanmas. Madaniyati hoziradan mahrum qolub, sanoye’ va maorif salohi ila qurollanmagan millat esa, dunyoda rohat va saodat yuzini ko‘rolmas. “Muborizai hayot” maydonida mutlaqo mag‘lub bo‘lur, oyoqlar ostida ezilur, diniy, iqtisodiy ishlarda o‘zgalarning asiri bo‘lub, bora­bora milliyat va diyonatini ham qo‘ldan berur. Ana ushbu yo‘llar ila oxiri mahv va nobud bo‘lub ketar”.\n' +
+            id: 7,
+            file_path: news7,
+            info: 'Jumladan, “Muhtaram yoshlarg‘a murojaat” nomli maqolasida muallif shunday xitob qiladi: “Muhtaram birodarlar! Barchamizga oftob kabi ravshan va ayondurki, makotib — taraqqiyning boshlang‘ichi, madaniyat va saodatning darvozasidur. Har millat eng avval, makotibi ibtidoiysini zamoncha isloh etib ko‘payturmaguncha taraqqiy yo‘lig‘a kirub madaniyatdan foydalanmas. Madaniyati hoziradan mahrum qolub, sanoye’ va maorif salohi ila qurollanmagan millat esa, dunyoda rohat va saodat yuzini ko‘rolmas. “Muborizai hayot” maydonida mutlaqo mag‘lub bo‘lur, oyoqlar ostida ezilur, diniy, iqtisodiy ishlarda o‘zgalarning asiri bo‘lub, bora­bora milliyat va diyonatini ham qo‘ldan berur. Ana ushbu yo‘llar ila oxiri mahv va nobud bo‘lub ketar”.\n' +
                 '\n' +
                 'Zamondosh hammaslaklari singari Behbudiy ham millat ma’rifatini oshirish, shu orqali jamiyatni yuksaltirish, ijtimoiy hayotni yaxshilashni istaydi. Shu yo‘lda o‘zining barcha kuch va imkoniyatlarini safarbar etadi. Jamiyatni halokatdan qutqaruvchi, rivojlantiruvchi asosiy manba ilm­ma’rifat, deb hisoblagan alloma yuqoridagi maqolasida o‘z davrining faol va ziyoli yoshlariga mukammal savod chiqarishga, zamonaviy bilimlar berishga mo‘ljallangan maktablar ochish, yuqori malakali muallimlarni ko‘paytirish zaruratini yuklaydi. Taraqqiy etgan davlatlarning bu boradagi tajribalarini o‘rganishga chaqiradi. Rivojlanib borayotgan mamlakatlar va millatlarning barchasi, avvalo, zamon bilan hamnafas holda ibtidoiy (boshlang‘ich) ta’lim va tarbiyani mustahkamlashga, milliy va diniy ruhni singdirishga chuqur e’tibor qaratishini aniq dalillar bilan ko‘rsatib o‘tadi: “Binoan alayh, yer yuzidagi barcha millatlar o‘z bolalarining ibtidoiy tarbiyasig‘a va maktablarning har jihatdan intizom va akmolig‘a ahamiyat berub bolalarini milliy va diniy ruhda mukammal suratda yetushdurarlar. Aning uchundurki, o‘zga millatlar diniy va milliy hissiyotg‘a molik bo‘lub, har ishda diyonat va milliyatni muqaddam tutarlar. Va luzumi kelganda bu yo‘lda molu jonlarini fido etmoqg‘a hozir turarlar. Mana, hozirgi urushlar va iqtisodiy tortishlar diyonat va milliyat hissiyoti natijasidur”.\n' +
                 '\n' +
@@ -152,9 +152,9 @@ function WriterCard({writer}) {
                 '\n'
         },
         {
-            id:8,
-            file_path:news8,
-            info:'Mahmudxo‘ja Behbudiy nomidagi maxsus stipendiya g‘oliblari aniqlandi\n' +
+            id: 8,
+            file_path: news8,
+            info: 'Mahmudxo‘ja Behbudiy nomidagi maxsus stipendiya g‘oliblari aniqlandi\n' +
                 '\n' +
                 'O‘zbekiston xalqaro islom akademiyasida Mahmudxo‘ja Behbudiy hayoti va ijodini o‘rganish, faoliyatini yoritish, ilmiy tadqiq qilish hamda targ‘ib etish yo‘nalishida izlanish olib borayotgan talabalarni rag‘batlantirish maqsadida “Mahmudxo‘ja Behbudiy nomidagi maxsus stipendiya” tanlovi o‘tkazilgan edi.\n' +
                 '\n' +
@@ -165,9 +165,9 @@ function WriterCard({writer}) {
                 'Rasmiy sahifalarimizni kuzatib boring! 🔽\n'
         },
         {
-            id:9,
-            file_path:news9,
-            info:'\n' +
+            id: 9,
+            file_path: news9,
+            info: '\n' +
                 'Adiblar xiyobonida ma’naviy tadbirlar\n' +
                 '\n' +
                 'Poytaxtimizdagi Adiblar xiyobonida O‘zbekiston xalqaro islom akademiyasining bir guruh ustoz va talabalari ishtirokida ma’naviy-ma’rifiy tadbir bo‘lib o‘tdi.\n' +
@@ -182,38 +182,35 @@ function WriterCard({writer}) {
 
 
     return (
-        writer.id===1?<Box sx={{flexGrow: 1}}>
+        writer.id === 1 ? <Box sx={{flexGrow: 1}} >
             <Grid container spacing={2}>
                 {
                     books.map((i, index) => {
-                            return (
-                                <Grid item xs={12} sm={6} md={3} key={index} >
-                                    <Item>
-                                        <CardActionArea className={'border rounded rounded-1'}>
-                                            <Card sx={{maxWidth: 345, maxHeight: 300, minHeight: 300}}>
+                        return (
+                            <Grid item xs={12} sm={6} md={3} key={index}>
+                                <Item className='p-5'>
+                                    <Card sx={{maxWidth: 345, maxHeight: 300, minHeight: 300}}>
 
-                                                <CardMedia
-                                                    component="img"
-                                                    height="140"
-                                                    image={i.file_path}
-                                                    alt="green iguana"
-                                                />
-                                                <NavLink to={'/published_news'} className='text-decoration-none text-black'
-                                                         onClick={() => changeDirection(i)}>
-                                                    <CardContent className='p-1 px-4'>
-                                                        <Typography variant="body2" color="text.secondary">
-                                                            {i.info}
-                                                        </Typography>
-                                                    </CardContent>
-                                                </NavLink>
-                                            </Card>
-                                        </CardActionArea>
-                                    </Item>
-                                </Grid>
-                            );
+                                        <CardMedia
+                                            component="img"
+                                            image={i.file_path}
+                                            alt="wrong"
+                                        />
+                                        <NavLink to={'/published_news'} className='text-decoration-none text-black'
+                                                 onClick={() => changeDirection(i)}>
+                                            <CardContent className='p-1 px-4'>
+                                                <Typography variant="body2" color="text.secondary">
+                                                    {i.info}
+                                                </Typography>
+                                            </CardContent>
+                                        </NavLink>
+                                    </Card>
+                                </Item>
+                            </Grid>
+                        );
                     })}
             </Grid>
-        </Box>:''
+        </Box> : ''
 
     );
 }

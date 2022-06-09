@@ -13,7 +13,7 @@ function Header() {
               <img
                   src={logo}
                   alt=""
-                  className="w-100"
+                  className="w-25 mx-sm-0 mx-1 mx-md-2 mx-lg-3"
               />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />

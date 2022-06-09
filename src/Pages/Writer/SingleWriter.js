@@ -254,7 +254,7 @@ function Writer() {
         current ? <div>
             <Header/>
             <Toolbar/>
-            <div className="row p-5">
+            <div className="row p-5 my-5">
                 <div className="col-sm-12 col-12 col-md-6 col-lg-6 col-xl-6">
                     <Card>
                         <CardMedia
